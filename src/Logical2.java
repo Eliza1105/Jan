@@ -15,6 +15,9 @@ public class Logical2 {
         System.out.println(b2);
         boolean b3=(a>=b)&&(b<=c);
         System.out.println(b3);
-        boolean b4=(a!=b)&&(b!=c)&&(c!=a);
+        boolean b4=(a!=b)&&(b!=c)&&(a!=c);
+        boolean b5= (a%2==0)&&(b%2!=1)&&(c<0);
+        System.out.println(b4);
+        System.out.println(b5);
     }
 }

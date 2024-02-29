@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="company.Sample_1">
+  <grid id="27dc6" binding="panel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="4372b" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="North"/>
+        <properties>
+          <background color="-11600020"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="99137" class="javax.swing.JButton" binding="button1" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Button"/>
+            </properties>
+          </component>
+          <component id="819e" class="javax.swing.JButton" binding="button2" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Button"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="1177c" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="West"/>
+        <properties>
+          <background color="-4774657"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="2092" class="javax.swing.JButton" binding="button4" default-binding="true">
+            <constraints border-constraint="North"/>
+            <properties>
+              <text value="Button"/>
+            </properties>
+          </component>
+          <component id="7b257" class="javax.swing.JButton" binding="button3" default-binding="true">
+            <constraints border-constraint="South"/>
+            <properties>
+              <text value="Button"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="ce949" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="1820b" class="javax.swing.JButton" binding="button5" default-binding="true">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <text value="Button"/>
+            </properties>
+          </component>
+          <component id="b402a" class="javax.swing.JButton" binding="button8" default-binding="true">
+            <constraints border-constraint="South"/>
+            <properties>
+              <text value="Button"/>
+            </properties>
+          </component>
+          <component id="d1dd1" class="javax.swing.JButton" binding="button9" default-binding="true">
+            <constraints border-constraint="East"/>
+            <properties>
+              <text value="Button"/>
+            </properties>
+          </component>
+          <component id="8deea" class="javax.swing.JButton" binding="button10" default-binding="true">
+            <constraints border-constraint="North"/>
+            <properties>
+              <text value="Button"/>
+            </properties>
+          </component>
+          <component id="a5838" class="javax.swing.JButton" binding="button11" default-binding="true">
+            <constraints border-constraint="West"/>
+            <properties>
+              <text value="Button"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="5e32b" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="South"/>
+        <properties>
+          <background color="-55212"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="42003" class="javax.swing.JButton" binding="button6" default-binding="true">
+            <constraints border-constraint="West"/>
+            <properties>
+              <text value="Button"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="listenablefuture-9999_0-empty-to-avoid-conflict-with-guava_jar_">
+    <output-path>$PROJECT_DIR$/out/artifacts/listenablefuture_9999_0_empty_to_avoid_conflict_with_guava_jar_</output-path>
+    <root id="archive" name="listenablefuture-9999_0-empty-to-avoid-conflict-with-guava_jar_.jar">
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

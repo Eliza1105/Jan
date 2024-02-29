@@ -1,0 +1,9 @@
+Hello, world!@	�Q� = 
+
+[options]
+name = product v.1
+price = 2.11
+
+[sectoin]
+value = 1
+

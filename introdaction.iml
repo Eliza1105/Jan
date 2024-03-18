@@ -17,5 +17,6 @@
     <orderEntry type="library" name="glassfish.jaxb.core1" level="project" />
     <orderEntry type="library" name="glassfish.jaxb.runtime" level="project" />
     <orderEntry type="library" name="json" level="project" />
+    <orderEntry type="library" name="jsoup" level="project" />
   </component>
 </module>

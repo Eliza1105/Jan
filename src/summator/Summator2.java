@@ -9,10 +9,15 @@ public class Summator2 {
         calculator1.setName("Calc 1");
         calculator1.start();
 
+        //calculator1.join(300);
+
         Calc calculator2 = new Calc();
         calculator2.setName("Calc 2");
 
         calculator2.start();
+
+        calculator1.join();
+        calculator2.join();
 
         System.out.println("Main finished");
 
@@ -21,10 +26,12 @@ public class Summator2 {
 
 class Calc extends Thread{
     public int sum = 0;
+public static Object object = new Object();
 
+public static volatile boolean finished = false;
     @Override
     public void run() {
-        for (int i = 0; i < 11; i++) {
+        for (int i = 0; i < 5; i++) {
             try {
                 Thread.sleep(200+(int)Math.random()*200);
             } catch (InterruptedException e) {
@@ -33,6 +40,21 @@ class Calc extends Thread{
             sum += i;
             System.out.printf("Calculator: %s, sum: %d%n", this.getName(), sum);
         }
+        synchronized (object){
+            if (this.getName().equals("Calc 2")&&!finished){
+                try {
+                    object.wait();
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }
         System.out.printf("%s, Sum = %d%n", this.getName(), sum);
+        synchronized (object){
+            if (this.getName().equals("Calc 1")){
+                finished=true;
+                object.notify();
+            }
+        }
     }
 }

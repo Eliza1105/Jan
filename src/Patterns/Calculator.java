@@ -10,7 +10,7 @@ public class Calculator {
             context = new Context(new NegativeOperator());
             System.out.println(context.execute(1));
         }
-    }
+}
 
     interface Strategy {
         int doOperation(int a); //Унарный оператор

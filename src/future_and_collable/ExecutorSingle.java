@@ -1,0 +1,21 @@
+package future_and_collable;
+
+import java.util.concurrent.*;
+import java.util.stream.Stream;
+
+public class ExecutorSingle {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
+        ExecutorService executorService = Executors.newSingleThreadExecutor();
+
+        //Из предыдущего приложения
+        Callable<String> callable = FutureAndCallable.getCallable();
+
+        System.out.println("Submitting Callable");
+        Future<String> future = executorService.submit(callable);
+        System.out.println("Retrieve the result of the future");
+        System.out.println(future.get());
+        System.out.println(Thread.currentThread().getName()+" is finished");
+
+        executorService.shutdown();
+    }
+}
